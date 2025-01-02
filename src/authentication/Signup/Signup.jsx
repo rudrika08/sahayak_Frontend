@@ -1,10 +1,11 @@
 import React, { useState } from "react";
-import styles from "./styles/Login.module.scss";
+import styles from "./styles/SignUp.module.scss";
 
-const Login = () => {
+const SignUp = () => {
   const [formData, setFormData] = useState({
     email: "",
     password: "",
+    confirmPassword: "",
   });
 
   const handleChange = (e) => {
@@ -14,15 +15,19 @@ const Login = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("Form submitted:", formData);
-    setFormData({ email: "", password: "" });
+    if (formData.password !== formData.confirmPassword) {
+      alert("Passwords do not match!");
+    } else {
+      console.log("Form submitted:", formData);
+      setFormData({ email: "", password: "", confirmPassword: "" });
+    }
   };
 
   return (
-    <div className={styles.loginContainer}>
-      <div className={styles.loginCard}>
-        <h2 className={styles.title}>Login</h2>
-        <form onSubmit={handleSubmit} className={styles.loginForm}>
+    <div className={styles.signUpContainer}>
+      <div className={styles.signUpCard}>
+        <h2 className={styles.title}>Sign Up</h2>
+        <form onSubmit={handleSubmit} className={styles.signUpForm}>
           <div className={styles.formGroup}>
             <label htmlFor="email">Email</label>
             <input
@@ -44,19 +49,28 @@ const Login = () => {
               value={formData.password}
               onChange={handleChange}
               required
-              placeholder="Enter your password"
+              placeholder="Create a password"
+            />
+          </div>
+          <div className={styles.formGroup}>
+            <label htmlFor="confirmPassword">Confirm Password</label>
+            <input
+              type="password"
+              id="confirmPassword"
+              name="confirmPassword"
+              value={formData.confirmPassword}
+              onChange={handleChange}
+              required
+              placeholder="Confirm your password"
             />
           </div>
           <button type="submit" className={styles.submitButton}>
-            Login
+            Sign Up
           </button>
         </form>
         <div className={styles.footer}>
           <p>
-            Don't have an account? <a href="/signup">Sign up</a>
-          </p>
-          <p>
-            <a href="/forgot-password">Forgot Password?</a>
+            Already have an account? <a href="/login">Login</a>
           </p>
         </div>
       </div>
@@ -64,4 +78,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default SignUp;

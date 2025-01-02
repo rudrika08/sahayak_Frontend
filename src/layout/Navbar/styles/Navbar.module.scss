@@ -1,7 +1,7 @@
 // Navbar.module.scss
 $primary-color: #d8572a;
 $secondary-color: #f1f1f1;
-$font-family: 'Popins', sans-serif;
+$font-family: 'Arial', sans-serif;
 $transition-duration: 0.3s;
 
 .navbar {
@@ -30,6 +30,7 @@ $transition-duration: 0.3s;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
+
 
 .menuIcon {
   display: none;

@@ -13,7 +13,9 @@ const Navbar = () => {
   return (
     <nav className={styles.navbar}>
       <div className={styles.navbarContainer}>
-        <div className={styles.logo}>Sahayak_AI</div>
+        <div className={styles.logo}>Sahayak_AI
+         
+        </div>
 
         <div className={styles.menuIcon} onClick={toggleMenu}>
           <i className={isMenuOpen ? 'fas fa-times' : 'fas fa-bars'}></i>

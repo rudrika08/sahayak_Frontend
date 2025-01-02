@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Login from "./authentication/Login/Login";
+import SignUp from "./authentication/Signup/Signup";
 import Service from "./pages/Service/Service";
 import Guide from "./pages/Guide/Guide";
 import Home from "./pages/Home/Home";
@@ -19,6 +20,7 @@ const App = () => {
                     <Route path="/service" element={<Service />} />
                     <Route path="/guide" element={<Guide />} />
                     <Route path="/login" element={<Login/>} />
+                    <Route path="/signup" element={<SignUp/>} />
                 </Routes>
                 <Footer />
             </div>
