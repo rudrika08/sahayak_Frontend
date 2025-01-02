@@ -1,0 +1,53 @@
+// styles/Acsess.module.scss
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh; // Full height of the viewport
+    background-image: url('https://cdn.prod.website-files.com/66ffb182a2a1dbe73904d0b5/6776602bc658d4406ab50a38_Screenshot%202025-01-02%20151451.png');
+    background-size: cover;  // Make the background cover the entire container
+    background-position: center;  // Center the background image
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .map {
+    display: none;  // Hide this section since the image is now in the background
+  }
+  .pageTitle {
+    position:relative;
+    font-size: 2.5rem;
+    margin: 2rem 0;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  
+  .info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.8); // Semi-transparent white background
+    padding: 2rem;
+    border-radius: 10px;
+    max-width: 800px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .box {
+    margin-bottom: 1.5rem;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  p {
+    font-size: 1rem;
+    color: #333;
+  }
+  

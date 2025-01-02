@@ -1,0 +1,54 @@
+.workflowSection {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    background-color: #f9f9f9;
+  
+    .workflowCard {
+      background: #fff;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      max-width: 600px;
+      width: 100%;
+  
+      .workflowTitle {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+        text-align: center;
+        color: #333;
+      }
+  
+      .workflowSteps {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+  
+        .step {
+          display: flex;
+          gap: 1rem;
+  
+          .stepNumber {
+            font-size: 1.25rem;
+            font-weight: bold;
+            color: #e7b00b;
+            flex-shrink: 0;
+          }
+  
+          .stepContent {
+            h2 {
+              font-size: 1.1rem;
+              color: #444;
+              margin-bottom: 0.5rem;
+            }
+  
+            p {
+              font-size: 0.9rem;
+              color: #666;
+            }
+          }
+        }
+      }
+    }
+  }
+  

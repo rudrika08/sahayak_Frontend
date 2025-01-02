@@ -1,0 +1,110 @@
+// styles/Login.module.scss
+
+.loginContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-top: 30px;
+    background: white; // Gradient background
+  }
+  
+  .loginCard {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+  }
+  
+  .title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    color: #333;
+  }
+  
+  .loginForm {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .formGroup {
+    text-align: left;
+  }
+  
+  label {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+  }
+  
+  input {
+    width: 90%;
+    padding: 1rem;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s ease;
+  
+    &:focus {
+      border-color: #ff7e5f;
+    }
+  
+    &::placeholder {
+      color: #bbb;
+    }
+  }
+  
+  .submitButton {
+    padding: 1rem;
+    background-color: #ff7e5f;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  
+    &:hover {
+      background-color: #feb47b;
+    }
+  
+    &:focus {
+      outline: none;
+    }
+  }
+  
+  .footer {
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    color: #777;
+  
+    a {
+      color: #ff7e5f;
+      text-decoration: none;
+      font-weight: 500;
+  
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  
+  @media (max-width: 500px) {
+    .loginCard {
+      padding: 2rem;
+    }
+    .title {
+      font-size: 1.5rem;
+    }
+    .submitButton {
+      font-size: 1rem;
+    }
+  }
+  
