@@ -1,59 +1,65 @@
-.guideContainer {
-    font-family: Arial, sans-serif;
-    padding: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
+.guideSection {
+    padding: 2rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 50px auto;
   
-  .heading {
-    font-size: 2.5rem;
-    color: #333;
-    text-align: center;
-    margin-bottom: 20px;
-  }
+    .title {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #f47b0a;
+      text-align: center;
+      margin-bottom: 1.5rem;
+      text-decoration: dashed;
+    }
   
-  .introText {
-    font-size: 1.2rem;
-    color: #555;
-    line-height: 1.6;
-    text-align: center;
-    margin-bottom: 40px;
-  }
+    .stepsContainer {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
   
-  .section {
-    margin-bottom: 30px;
-  }
+      .step {
+        display: flex;
+        gap: 1rem;
+        padding: 1rem;
+        background-color: #efdaa5;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        transition: transform 0.2s;
   
-  .subHeading {
-    font-size: 2rem;
-    color: #333;
-    margin-bottom: 10px;
-  }
+        &:hover {
+          transform: translateY(-5px);
+        }
   
-  .sectionContent {
-    font-size: 1.1rem;
-    color: #555;
-    line-height: 1.6;
-  }
+        .stepNumber {
+          font-size: 1.5rem;
+          font-weight: bold;
+          color: #f27b13;
+          background-color: #ebe0d8;
+          padding: 0.5rem 1rem;
+          border-radius: 45%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-shrink: 0;
+        }
   
-  .featureList {
-    list-style-type: disc;
-    padding-left: 20px;
-    color: #555;
-  }
+        .stepDetails {
+          .stepTitle {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #090000;
+            margin-bottom: 0.5rem;
+          }
   
-  .footer {
-    text-align: center;
-    margin-top: 50px;
-    font-size: 1.2rem;
-  }
-  
-  .link {
-    color: #007bff;
-    text-decoration: none;
-  }
-  
-  .link:hover {
-    text-decoration: underline;
+          .stepDescription {
+            font-size: 1rem;
+            color: #0b0101;
+            line-height: 1.5;
+          }
+        }
+      }
+    }
   }
   
