@@ -1,0 +1,78 @@
+{
+    "schemes": [
+      {
+        "icon": "🌾",
+        "title": "Agriculture, Rural & Environment",
+        "count": 13
+      },
+      {
+        "icon": "🏦",
+        "title": "Banking, Financial Services and Insurance",
+        "count": 13
+      },
+      {
+        "icon": "💼",
+        "title": "Business & Entrepreneurship",
+        "count": 13
+      },
+      {
+        "icon": "🎓",
+        "title": "Education & Learning",
+        "count": 13
+      },
+      {
+        "icon": "❤️",
+        "title": "Health & Wellness",
+        "count": 13
+      },
+      {
+        "icon": "🏠",
+        "title": "Housing & Shelter",
+        "count": 13
+      },
+      {
+        "icon": "⚖️",
+        "title": "Public Safety, Law & Justice",
+        "count": 13
+      },
+      {
+        "icon": "🔬",
+        "title": "Science, IT & Communications",
+        "count": 13
+      },
+      {
+        "icon": "📈",
+        "title": "Skills & Employment",
+        "count": 13
+      },
+      {
+        "icon": "✊",
+        "title": "Social Welfare & Empowerment",
+        "count": 13
+      },
+      {
+        "icon": "🎾",
+        "title": "Sports & Culture"
+      },
+      {
+        "icon": "🚌",
+        "title": "Transport & Infrastructure",
+        "count": 13
+      },
+      {
+        "icon": "✈️",
+        "title": "Travel & Tourism"
+      },
+      {
+        "icon": "🔧",
+        "title": "Utility & Sanitation",
+        "count": 13
+      },
+      {
+        "icon": "👩‍👧‍👦",
+        "title": "Women and Child",
+        "count": 13
+      }
+    ]
+  }
+  
