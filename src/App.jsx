@@ -14,6 +14,7 @@ const App = () => {
         <Router>
             <div>
                 <Navbar />
+                <section style={{ minHeight: "90vh" , display: "flex", flexDirection: "column", justifyContent: "center"}}>
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/schemes" element={<Schemes />} />
@@ -22,6 +23,7 @@ const App = () => {
                     <Route path="/login" element={<Login/>} />
                     <Route path="/signup" element={<SignUp/>} />
                 </Routes>
+                </section>
                 <Footer />
             </div>
         </Router>
