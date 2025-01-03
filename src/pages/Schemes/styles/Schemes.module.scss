@@ -1,3 +1,35 @@
-h1{
-    color: red;
-}
+$primary-color: #d8572a;
+$background-color: #fff;
+$text-color: #000;
+$font-family: "Arial, sans-serif";
+
+.page {
+    background-color: $background-color;
+    color: $text-color;
+    font-family: $font-family;
+    padding: 2rem;
+    max-width: 800px;
+    margin: 2rem auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .title {
+    font-size: 2rem;
+    color: $primary-color;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .completeMessage {
+    text-align: center;
+  
+    h2 {
+      color: $primary-color;
+      margin-bottom: 1rem;
+    }
+  
+    p {
+      font-size: 1.2rem;
+    }
+  }
